@@ -398,3 +398,37 @@ Suggest updating the business context when:
 - They rebrand or change positioning
 - Their goals change significantly
 - It's been 6+ months since the last update
+
+---
+
+## Visual Output
+
+Generate an interactive HTML artifact: a **Business Profile Dashboard** — a structured, scannable reference card for the completed business context document.
+
+### Layout
+
+**Header bar (full width):**
+A completion tracker showing "X of 11 sections complete" with a thin progress bar beneath it. Sections count as complete when they contain real content (not placeholder text). Color: neutral gray fill, accent color on the filled portion.
+
+**Two-column layout below the header:**
+- Left column (25% width): a sticky section navigation list. Each of the 11 section names listed vertically with a small filled circle (●) if complete or empty circle (○) if incomplete. Clicking a section name scrolls to that section in the right column.
+- Right column (75% width): the full document content, organized into section cards.
+
+### Section Cards
+
+Each of the 11 sections renders as its own card with:
+- Section title as the card header (bold, slightly larger)
+- Each field shown as a label (gray, small caps) + value (black, normal weight) pair
+- Multi-value fields (like differentiators, testimonials, writing rules) rendered as a vertical list with a subtle left border
+- A small "complete" badge (green) or "needs input" badge (yellow) in the top-right corner of each card
+
+### Interactive Behaviors
+
+- **Clicking the circle in the nav list** toggles a section between "needs review" and "confirmed" state — updates the progress bar in the header
+- **Clicking any field value** highlights it and copies it to clipboard (shows a brief "Copied" tooltip)
+- **Collapsible sections:** each card has a chevron to collapse/expand — useful for long sections like Customer Language or Social Proof
+- **"Copy all"** button in the header copies the full document as clean markdown
+
+### Design
+
+White cards, 1px border (#e5e7eb), 12px border-radius, 16px padding. Section nav has a subtle background (#f9fafb). Typography: system font stack. Colors via CSS variables so it works in light and dark mode. No shadows, no gradients. Completion indicator uses a muted green (#16a34a). "Needs input" uses amber (#d97706).

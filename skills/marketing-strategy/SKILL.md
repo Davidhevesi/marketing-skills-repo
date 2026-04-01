@@ -504,3 +504,50 @@ Before presenting the strategy:
 | 90-day plan with no review date | Schedule the review before starting — accountability matters |
 | Measuring only lagging indicators | Track leading indicators weekly to course-correct in real time |
 | Strategy that requires 20 hours/week from a 5-hour/week person | Match the plan to the actual available time |
+
+---
+
+## Visual Output
+
+Generate an interactive HTML artifact: a **90-Day Strategy Dashboard** — a complete, interactive view of the strategy with progress tracking built in.
+
+### Layout
+
+**Header bar (full width):**
+Primary goal on the left (large, bold). Center: a 90-day progress bar showing what day of the plan it is (or "Day 0 — Starting now" if just created). Right: strategic posture badge (e.g., "Posture: Convert") and days remaining.
+
+**Three-column month view (below header):**
+Three equal columns: Month 1 — Foundation / Month 2 — Execution / Month 3 — Optimize. Each column:
+- Month label + date range at the top
+- Focus theme in muted text
+- Task checklist below — each task is a checkbox row
+- A mini progress bar at the bottom of the column: X of Y tasks done
+
+**Channel section (below month columns, full width):**
+Two or three channel cards side by side. Each card:
+- Channel name as the header
+- "Primary" or "Supporting" badge
+- Why this channel: one sentence
+- Cadence: shown as a simple schedule chip (e.g., "3x / week")
+- Goal: what this channel is expected to deliver
+
+**KPI Tracker (below channels, full width):**
+A table with one row per leading indicator:
+- Indicator name
+- Weekly target
+- "This week" — an editable input field where the user types in their current number
+- A small status indicator: green if at/above target, amber if below, gray if empty
+
+**"Not Doing" section (below KPIs, full width):**
+A list of consciously skipped tactics, each as a pill with an × icon, in a light gray style. Serves as a visual reminder of scope boundaries.
+
+### Interactive Behaviors
+
+- **Month task checkboxes** update that month's mini progress bar and the overall header progress
+- **KPI input fields** are editable — typing a number updates the status indicator in real time (compares against the target)
+- **Channel cards** are expandable — clicking reveals the full channel plan including cadence, goal, and weekly time commitment
+- **"Not Doing" pills** are dismissible — clicking × removes them (with an undo option for 3 seconds)
+
+### Design
+
+Month columns: equal width, separated by 1px vertical dividers (#e5e7eb). Active month (based on current date) has a subtle blue-tinted header background. KPI table: clean rows with alternating #ffffff / #f9fafb. Editable input fields: borderless with a bottom border only (underline style). Status indicators: small colored dots — green (#16a34a), amber (#d97706), gray (#9ca3af). "Not Doing" pills: gray background (#f3f4f6), muted text (#6b7280).

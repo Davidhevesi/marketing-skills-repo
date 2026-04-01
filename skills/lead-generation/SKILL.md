@@ -403,3 +403,44 @@ Before presenting any lead gen recommendations:
 | Running ads to the homepage | Ads need a dedicated, distraction-free landing page |
 | Optimizing for lead volume instead of lead quality | Qualify in the lead magnet, opt-in form, or landing page copy |
 | Building multiple channels at once | Pick one, make it work, then add the next |
+
+---
+
+## Visual Output
+
+Generate an interactive HTML artifact: a **Lead Generation System Map** — a visual funnel showing the full lead flow with channel status at each stage.
+
+### Layout
+
+**Header bar (full width):**
+"Lead Generation System — [Business Name]" on the left. Center: system completeness — "X of 4 funnel stages active" with a progress bar. Right: quick wins remaining — "X P1 actions available" in amber.
+
+**Funnel map (full width, below header):**
+Four columns side by side representing the funnel stages: **Awareness → Capture → Nurture → Convert**. Each column has:
+- Stage label at the top in small caps
+- Stage purpose in one line of muted text below
+- Channel cards stacked below that
+
+Each channel card shows:
+- Channel name (e.g., "Referrals", "Lead Magnet", "Welcome Sequence", "Discovery Call")
+- A status badge: Active (green) / Build Next (amber) / Not Started (gray)
+- One-line description of what's recommended
+
+Clicking a channel card expands it to show:
+- The specific recommendation for this channel
+- 2–3 action items listed with priority badges
+- A "Mark active" toggle that updates the status badge
+
+**Quick Wins panel (below funnel, full width):**
+A distinct section titled "Start Here — Quick Wins." Lists all P1 action items across all channels as checkboxes. Each item shows which channel it belongs to as a small badge. Checking an item marks it done and updates the relevant channel card above.
+
+### Interactive Behaviors
+
+- **Clicking a channel card** expands inline below the card (other cards in the same column shift down)
+- **"Mark active" toggle** in an expanded card changes the card's status badge to green and updates the header count
+- **Quick Wins checkboxes** sync with action items inside channel cards — checking one in either place updates both
+- **Stage columns** highlight with a subtle green background when all channels in that stage are active
+
+### Design
+
+Funnel columns: equal width, 1px border between them (#e5e7eb), 16px padding. Active badge: green (#dcfce7 bg, #15803d text). Build Next badge: amber (#fffbeb bg, #d97706 text). Not Started badge: gray (#f3f4f6 bg, #6b7280 text). Quick Wins panel: slightly off-white background (#f9fafb), top border to separate from the funnel. Expanded channel cards: white background, 1px border, subtle drop — no shadow, just a slightly darker border (#9ca3af).

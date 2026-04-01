@@ -432,3 +432,48 @@ FAQ or common question
 | Posting without engaging | Reply to comments; participate in conversations |
 | Inconsistent voice across platforms | Use Brand Voice Guide as the anchor; adjust tone, not personality |
 | Trying to be on every platform at once | Pick 1–2 platforms and do them well before expanding |
+
+---
+
+## Visual Output
+
+Generate an interactive HTML artifact: a **Content Board** — a filterable grid of post cards organized by platform and content pillar.
+
+### Layout
+
+**Header bar (full width):**
+Total posts created on the left. A pillar legend in the center: each pillar shown as a small color-coded dot + label (e.g., ● Education, ● Behind the Scenes, ● Social Proof). A readiness counter on the right: "X of Y posts ready."
+
+**Filter bar (below header):**
+Two filter rows:
+- Platform tabs: All / Instagram / LinkedIn / TikTok / X — clicking filters the grid to that platform only
+- Pillar filters: small pill buttons for each pillar, toggleable — clicking one shows/hides that pillar's posts
+
+**Post card grid (below filters):**
+Posts displayed as cards in a responsive grid (3 columns on wide, 2 on narrow). Each card shows:
+- Top-left: platform icon (small, monochrome)
+- Top-right: pillar color dot
+- Format badge below the icons (e.g., "Carousel · 6 slides", "Single image", "Reel script")
+- The hook / first line in bold
+- First 80 characters of the caption below, faded out
+- Bottom row: a "Ready" checkbox on the left, an "Expand" link on the right
+
+**Expanded post view:**
+Clicking "Expand" opens a modal or inline panel showing:
+- Platform + format + pillar
+- Full caption/script with proper line breaks
+- Hashtags shown separately below the caption in a muted style
+- A "Copy caption" button
+- If it's a carousel: slide breakdown listed
+- If it's a reel script: time markers shown
+
+### Interactive Behaviors
+
+- **Platform tabs and pillar pills** filter the grid in real time without page reload
+- **"Ready" checkbox** on each card marks it as ready, updates the counter in the header, and adds a subtle green tint to the card
+- **Expand** opens the full post — clicking outside or pressing Escape closes it
+- **"Copy caption"** in the expanded view copies the full text to clipboard
+
+### Design
+
+Cards: white, 1px border (#e5e7eb), 12px radius, 16px padding. Pillar color dots: each pillar gets a distinct muted color (e.g., blue, amber, green, purple, rose — nothing bright). Platform icons: simple SVG or text abbreviation (IG, LI, TT, X). Ready cards get a thin left border in green (#16a34a). Modal/panel overlay: semi-transparent dark background (#00000033).

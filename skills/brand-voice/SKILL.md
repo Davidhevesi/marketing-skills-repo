@@ -406,3 +406,41 @@ Suggest updating the Brand Voice Guide when:
 - They enter a significantly different market or audience segment
 - The business grows and more people are producing content
 - It's been 12+ months since the last update and the business has evolved
+
+---
+
+## Visual Output
+
+Generate an interactive HTML artifact: a **Brand Voice Reference Card** — a visual, usable guide to the brand's voice that someone could pull up mid-writing session.
+
+### Layout
+
+**Header bar (full width):**
+Brand name on the left. Three personality adjectives displayed as bold chips (dark background, white text) in the center. A "voice strength" indicator on the right: a simple label ("Defined" / "Partial" / "Needs Work") based on how many sections are populated.
+
+**Three-row layout below the header:**
+
+**Row 1 — Tone Spectrums (full width card):**
+Six horizontal spectrum bars, one per tone dimension (Formal ↔ Casual, Serious ↔ Playful, etc.). Each bar is a thin track with a filled dot showing where the brand lands. Label on the left end, label on the right end. Below each bar, a one-line note explaining the positioning (e.g., "Warm but not effusive — think knowledgeable friend, not salesperson").
+
+**Row 2 — Two columns:**
+- Left card: **"We sound like"** — personality adjectives with one-sentence definitions each. Below that, an "Inspired by" section with cited brands/people.
+- Right card: **"We don't sound like"** — anti-voice descriptors with one-sentence explanations of what to avoid and why.
+
+**Row 3 — Two columns:**
+- Left card: **Writing Mechanics** — a checklist-style list of yes/no rules (Oxford comma: ✓ Yes, Exclamation points: ✗ Never, etc.). Each rule is a row with the rule name on the left and a ✓ or ✗ badge on the right.
+- Right card: **Words & Phrases** — two stacked sections. Top: "Use these" — words/phrases as green-tinted chips. Bottom: "Never say" — words/phrases as red-tinted chips.
+
+**Row 4 — Full width card:**
+**Voice in Practice** — tabbed interface with one tab per context (Website, Email, Social, Proposals). Each tab shows a live writing sample demonstrating the voice for that context. Below each sample, a 2-column before/after block showing an off-brand vs on-brand version of the same sentence.
+
+### Interactive Behaviors
+
+- **Clicking any chip** (personality adjective, use/avoid word) copies it to clipboard with a brief tooltip
+- **Tabs** in the Voice in Practice section switch the sample shown
+- **Tone spectrum dots** are draggable — adjusting them updates the note below in real time (for refining the guide)
+- **"Export guide"** button at the bottom copies the full voice guide as formatted markdown
+
+### Design
+
+Same card system as other skills. Spectrum bars use a thin (#e5e7eb) track with a filled dot in the brand's accent color. "We sound like" chips: dark (#1f2937) background. "Use" chips: light green background (#dcfce7), green text (#15803d). "Never say" chips: light red background (#fee2e2), red text (#dc2626).

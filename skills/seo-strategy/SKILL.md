@@ -457,3 +457,40 @@ Before presenting any SEO analysis or recommendations:
 | Publishing thin content to "have a blog" | One comprehensive post beats ten thin ones |
 | Ignoring page speed on mobile | Use PageSpeed Insights; images are usually the culprit |
 | Expecting results in weeks | SEO is a 3–6 month minimum investment; set expectations accurately |
+
+---
+
+## Visual Output
+
+Generate an interactive HTML artifact: an **SEO Audit Checklist** — a categorized, prioritized checklist with a live progress tracker.
+
+### Layout
+
+**Header bar (full width):**
+"SEO Audit — [Business Name]" on the left. Center: overall progress — "X of Y items addressed" with a progress bar beneath. Right: three small priority counts — "P1: X remaining / P2: X / P3: X" in color-coded text.
+
+**Category tabs (below header):**
+Five tabs: Technical SEO / On-Page / Content / Local SEO / AI Search. Each tab has a small badge showing its own item count and a mini progress bar beneath the tab label. The active tab is underlined. Clicking switches the checklist below.
+
+**Filter bar (below tabs):**
+Three pill buttons: All Priorities / P1 Quick Wins / P2 Plan / P3 Ongoing. Toggling a pill filters the visible items within the active category tab.
+
+**Checklist (below filter bar):**
+Each item is a row:
+- Left: a checkbox
+- Center: the recommendation text in normal weight
+- Right: a priority badge (P1 = red, P2 = amber, P3 = gray)
+- Below the recommendation text: collapsed detail — clicking the row expands it to show three sub-rows: "Issue:" / "Why it matters:" / "Fix:" — each as a label + description pair
+
+Completed items (checked) move to the bottom of their category and display with strikethrough text and reduced opacity.
+
+### Interactive Behaviors
+
+- **Checking an item** moves it to the bottom of its list, applies strikethrough, reduces opacity, and increments the progress bar in the header and the category tab's mini bar
+- **Clicking a row** (not the checkbox) expands or collapses the Issue / Why / Fix detail
+- **Priority pill filters** show only items of that priority across the active tab
+- **Tab switching** preserves check states — progress persists across tab switches
+
+### Design
+
+P1 badge: red background (#fef2f2), red text (#dc2626). P2 badge: amber background (#fffbeb), amber text (#d97706). P3 badge: gray background (#f3f4f6), gray text (#6b7280). Completed rows: opacity 0.45, text-decoration line-through. Expanded detail rows have a subtle left border (#e5e7eb) and smaller font size (13px). Tab mini progress bars: 3px height, full width of the tab.

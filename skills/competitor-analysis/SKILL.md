@@ -463,3 +463,67 @@ Before presenting the analysis:
 | Focusing on features instead of positioning | Clients don't choose on features — they choose on fit, trust, and outcome |
 | Competitive obsession | Analysis is a tool, not a strategy — know competitors enough to differentiate, then focus on your own execution |
 | Skipping the "do nothing" competitor | Inertia is often the real competition; address it explicitly |
+
+---
+
+## Visual Output
+
+Generate an interactive HTML artifact: a **Competitive Landscape Dashboard** — a tabbed view with competitor profiles, a comparison matrix, and a differentiation strategy summary.
+
+### Layout
+
+**Header bar (full width):**
+"Competitive Analysis — [Business Name]" on the left. Center: X competitors analyzed. Right: the top differentiation opportunity in one bold sentence (the most important takeaway from the whole analysis).
+
+**Primary tabs (below header):**
+Four tabs: **Overview / Competitor Profiles / Gap Analysis / Differentiation Strategy**
+
+---
+
+**Overview tab:**
+The competitive matrix table. Rows are dimensions (Primary Audience, Core Positioning, Key Differentiator, Price Positioning, Offer Structure, Proof Strength, Tone/Voice). Columns are Your Business + each competitor. Each cell is color-coded:
+- Green: a clear strength or advantage relative to others
+- Red: a clear weakness or gap
+- Yellow: similar to competitors (commodity territory)
+- White/neutral: informational, no clear advantage either way
+
+Hovering a cell shows a tooltip with the evidence or reasoning behind the color.
+
+---
+
+**Competitor Profiles tab:**
+Sub-tabs for each competitor. Each profile is a card layout:
+- Header: competitor name + URL + threat level badge (High / Medium / Low)
+- Seven dimension rows, each as a label + value pair: Positioning, Target Audience, Key Differentiator, Price Positioning, Offer Structure, Proof Strength, Notable Weakness
+- At the bottom: a "Strengths" chip list and a "Vulnerabilities" chip list
+
+---
+
+**Gap Analysis tab:**
+Four card sections in a 2×2 grid:
+- **Messaging Gaps** — what the audience cares about that no competitor addresses
+- **Audience Gaps** — underserved segments no one owns
+- **Offer Gaps** — things clients need that no competitor provides
+- **Vulnerability Opportunities** — specific competitor weaknesses you can position against
+
+Each section contains a list of gap items. Each item has a "Opportunity size" badge (High / Medium) and is checkable to mark as "being addressed."
+
+---
+
+**Differentiation Strategy tab:**
+Three sections stacked:
+1. **Differentiation Statement** — the "Unlike [X], we [Y] — which means [Z]" statement displayed prominently in large type in a distinct box. A copy button alongside it.
+2. **Differentiation Type** — the category (Niche / Outcome / Process / Speed / etc.) shown as a large badge with a one-paragraph explanation of why this type fits.
+3. **Messaging Implications** — three rows: "Lead with:" / "Stop saying:" / "Address explicitly:" — each as a label + content pair. A "Copy as brief" button that copies all three rows formatted as a messaging brief.
+
+### Interactive Behaviors
+
+- **Matrix cells** show a tooltip on hover with reasoning
+- **Clicking a competitor name** in the Overview matrix navigates to that competitor's profile tab
+- **Gap items** are checkable to track which opportunities are being acted on
+- **Differentiation Statement** copy button copies the full statement to clipboard
+- **"Copy as brief"** exports the messaging implications as a formatted brief
+
+### Design
+
+Matrix table: alternating row backgrounds (#ffffff / #f9fafb). Cell color coding: green (#dcfce7), red (#fee2e2), yellow (#fffbeb), neutral (#ffffff). Competitor profile cards: white, 1px border. Threat level badges: High = red, Medium = amber, Low = gray. Gap cards: white with a colored left border per category (blue, purple, amber, red). Differentiation statement box: slightly off-white (#f9fafb), 2px border, 20px padding, larger font (18px).

@@ -358,3 +358,43 @@ Flag these and fix them before presenting any copy:
 | Features listed without benefits | Apply FAB: what does each feature enable or deliver? |
 | No proof | Add a number, a result, a testimonial, a name |
 | CTA buried at the bottom | Put a CTA where the reader is ready — not just at the end |
+
+---
+
+## Visual Output
+
+Generate an interactive HTML artifact: a **Copy Review Panel** — the finished copy displayed with a live self-edit scorecard the user can work through.
+
+### Layout
+
+**Header bar (full width):**
+Left: copy type and framework used (e.g., "Homepage Hero · PAS Framework"). Center: a copy score from 0–100, calculated as the percentage of self-edit filters passing. Right: a "Copy to clipboard" button for the final copy.
+
+**Two-column layout below:**
+
+**Left column (60%) — The Copy:**
+The finished copy rendered exactly as it would appear in context — headline in larger type, body in normal weight, CTA in a distinct button-style box. If variants were produced, show them as tabs above the copy area ("Version A / Version B / Version C"). Clicking a tab switches the copy shown. Each variant tab has its own clipboard copy button.
+
+**Right column (40%) — Self-Edit Scorecard:**
+Six filter rows, one per self-edit check:
+- Swap Test (Is this differentiated?)
+- Reader Test (Does it serve the reader, not the brand?)
+- Clarity Test (No stumbles when read aloud?)
+- Specificity Test (No placeholder language?)
+- CTA Test (One specific, friction-free ask?)
+- Voice Test (Matches brand voice guide?)
+
+Each row has: filter name, one-sentence description, and a pass/fail toggle (✓ / ✗). Toggles start in the state Claude assessed — user can override. Each toggle updates the score in the header.
+
+**Below the two columns — Key Decisions (full width):**
+A thin card showing 2–3 brief notes explaining the choices made: which framework and why, any voice decisions, any structural choices. Displayed as a simple list with a subtle left border.
+
+### Interactive Behaviors
+
+- **Toggling a filter** recalculates the score in the header in real time
+- **Switching variant tabs** swaps the copy in the left column; scorecard resets to Claude's assessment for that variant
+- **Copy button** copies the currently displayed copy (formatted cleanly, no HTML) to clipboard
+
+### Design
+
+Copy area has a slightly off-white background (#fafafa) to visually distinguish it from the scorecard. Filter rows alternate between white and #f9fafb. Pass state: green check (#16a34a). Fail state: red X (#dc2626). Score displayed as a large number with a small circular progress ring around it.

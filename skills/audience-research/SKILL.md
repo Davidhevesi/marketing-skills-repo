@@ -602,3 +602,52 @@ Research options are limited but not zero:
 | Collecting data but never synthesizing it | Research that doesn't produce a decision is wasted time |
 | Asking leading questions in surveys/interviews | Neutral questions produce honest answers |
 | Skipping the "what almost stopped you" question | Hesitations are as important as motivations |
+
+---
+
+## Visual Output
+
+Generate an interactive HTML artifact: a **Research Insights Board** — a Kanban-style board of quote cards organized by insight type, with a searchable language glossary.
+
+### Layout
+
+**Header bar (full width):**
+"Audience Research — [Business Name]" on the left. Center: research summary — methods used as small badges (e.g., "Review Mining · Interviews · Forums"). Right: total quotes captured and key insights count.
+
+**Five-column insight board (below header):**
+Five equal columns:
+1. **Before State** — how they describe their situation before finding a solution
+2. **Triggers** — what makes them start looking
+3. **Hesitations** — what almost stops them
+4. **Desired Outcome** — what they actually want
+5. **Decision Factors** — why they chose / what convinced them
+
+Each column has:
+- Column header with the insight type name
+- A count badge showing number of cards
+- Quote cards stacked below
+
+Each quote card shows:
+- The verbatim quote in quotation marks
+- Source badge below the quote (e.g., "Google Review", "Interview", "Reddit")
+- A small star icon to mark a quote as "headline-worthy"
+
+Clicking a card expands it to show:
+- Full quote
+- Source and date
+- An "Implication" note: what this means for marketing
+
+**Language Glossary (below the board, full width):**
+Two side-by-side sections: "Use these words" and "Avoid these words." Each word or phrase displayed as a chip. "Use" chips: green-tinted. "Avoid" chips: red-tinted. A search input at the top of the glossary filters both sections in real time.
+
+### Interactive Behaviors
+
+- **Clicking a card** expands it inline with the full quote and implication note
+- **Starring a card** (clicking the star icon) marks it as headline-worthy and adds it to a "Top Quotes" filtered view
+- **"Top Quotes" filter button** above the board filters all columns to show only starred cards
+- **Glossary search** filters chips in real time as the user types
+- **"Copy all top quotes"** button copies all starred quotes as a formatted list to clipboard
+
+### Design
+
+Columns: equal width, 1px border between (#e5e7eb), 12px padding, light background (#f9fafb). Quote cards: white, 1px border, 10px radius, 12px padding. Quote text: italic, slightly larger (15px). Source badge: small, gray background, muted text. Starred cards: thin left border in amber (#f59e0b). "Use" chips: #dcfce7 background, #15803d text. "Avoid" chips: #fee2e2 background, #dc2626 text. The board scrolls horizontally on narrow viewports.

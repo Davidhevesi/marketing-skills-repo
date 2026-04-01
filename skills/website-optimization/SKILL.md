@@ -363,3 +363,44 @@ For creative and service businesses, the portfolio page is a trust and conversio
 | No CTA in the navigation | Add a button ("Book a call," "Get a quote") to the nav |
 | Form asks for too much upfront | Reduce to name, email, and one qualifying question |
 | Dead-end pages with no next step | Add a CTA or "related" section to every page |
+
+---
+
+## Visual Output
+
+Generate an interactive HTML artifact: a **Site Audit Dashboard** — a page-by-page issue tracker with priority-coded fixes.
+
+### Layout
+
+**Header bar (full width):**
+"Website Audit — [Business Name]" on the left. Center: total issues found with a breakdown — "X critical · X moderate · X low." Right: an overall site score (0–100) calculated as (resolved issues / total issues × 100), displayed as a large number with a label beneath ("Site Score").
+
+**Two-column layout below header:**
+
+**Left column (25%) — Page navigator:**
+A vertical list of all audited pages/areas (Homepage, Services, About, Contact, Trust Signals, Navigation, Mobile, Speed). Each row shows:
+- Page name
+- A small dot color-coded by worst unresolved issue (red = P1 unresolved, amber = P2, green = all resolved)
+- Issue count badge (e.g., "3 issues")
+Clicking a page selects it and loads its issues in the right column.
+
+**Right column (75%) — Issue cards:**
+For the selected page, each issue is a card:
+- Header row: issue title + priority badge (P1 / P2 / P3) on the right
+- "Issue:" line in normal weight
+- "Why it matters:" line in muted gray
+- "Fix:" line in normal weight — this is the actionable instruction
+- Bottom row: a "Resolved" checkbox on the left
+
+Cards are sorted by priority (P1 first). Resolved cards move to the bottom and collapse to a single line with strikethrough title.
+
+### Interactive Behaviors
+
+- **Clicking a page** in the left nav loads that page's issues in the right column
+- **Checking "Resolved"** on an issue card collapses it, moves it to the bottom, updates the page dot color in the nav, updates the header score and counts
+- **Clicking any collapsed (resolved) card** re-expands it if needed
+- **Priority badge** on each card is clickable — clicking it cycles through P1 / P2 / P3 to let the user re-prioritize
+
+### Design
+
+Left nav: background #f9fafb, 1px right border. Selected page row: white background, left accent border (3px, brand color). Issue cards: white, 1px border (#e5e7eb), 12px radius. P1 badge: red. P2 badge: amber. P3 badge: gray. Resolved cards: opacity 0.4, strikethrough on title. The site score number: large (48px), colored green if ≥70, amber if 40–69, red if <40.
