@@ -106,7 +106,7 @@ The `business-context` skill is the foundation. **Set it up first.** Every other
 | Skill | Description | Status |
 |---|---|---|
 | [lead-generation](skills/lead-generation) | Lead magnets, opt-in strategy, landing pages, partnerships, referral systems. | ✅ Available |
-| [client-communication](skills/client-communication) | Proposals, follow-ups, project updates, review requests, testimonial collection, re-engagement. | 🔜 Coming soon |
+| [client-communication](skills/client-communication) | Proposals, follow-ups, project updates, review requests, testimonial collection, re-engagement. | ✅ Available |
 
 ### Strategy & Research
 | Skill | Description | Status |
@@ -141,7 +141,7 @@ The `business-context` skill is the foundation. **Set it up first.** Every other
 - [x] `seo-strategy` — Search optimization
 - [x] `website-optimization` — Conversion & UX
 - [x] `lead-generation` — Lead acquisition
-- [ ] `client-communication` — Client-facing comms
+- [x] `client-communication` — Client-facing comms
 - [ ] `marketing-strategy` — Strategic planning
 - [ ] `audience-research` — Customer research
 - [ ] `competitor-analysis` — Competitive intelligence
