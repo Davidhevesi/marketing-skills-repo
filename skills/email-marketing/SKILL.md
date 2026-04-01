@@ -31,14 +31,6 @@ Look for a **Business Context** document and a **Brand Voice Guide** in the proj
 
 Get clear on exactly what's needed before writing anything.
 
-**Before starting, ask:**
-- What email platform are you using, if any?
-- Do you have performance data from previous emails — open rates, click rates, unsubscribe rates?
-- If improving an existing email or sequence: can you share the current version?
-- If writing a welcome sequence: what does someone receive immediately on opt-in today, if anything?
-
-Existing data shapes recommendations. Open rates point to subject line problems. Click rates point to body or CTA problems.
-
 **What type of email or sequence?**
 - Welcome sequence (new subscriber or new customer)
 - Nurture sequence (moving someone from interested to ready)
@@ -418,15 +410,36 @@ The subject line's only job is to get the email opened. Everything else is secon
 
 ## Visual Output
 
-Generate an interactive **Email Sequence Viewer** — a timeline of the sequence with each email readable on demand.
+Generate an interactive HTML artifact: an **Email Sequence Viewer** — a timeline of the sequence with each email readable on click.
 
-**What it shows:**
-- A horizontal timeline with each email as a numbered node labeled with its purpose (e.g., "Welcome", "Value", "Ask") and send timing below
-- An overall readiness indicator showing how many emails are marked ready to send
-- The detail panel of whichever email is selected: subject line, preview text, full body, and CTA
+### Layout
 
-**What the user can do:**
-- Click a timeline node to open that email's detail; click again to close
-- Mark each email as ready using a checkbox on its detail card — updates the readiness count
-- Copy subject lines, preview text, or the full email body to clipboard
-- View alternative subject lines under a disclosure toggle on each email
+**Header bar (full width):**
+Sequence name and type (e.g., "Welcome Sequence · 5 Emails"). A readiness bar: "X of Y emails ready to send" with a progress bar. A total estimated send period on the right (e.g., "Sends over 10 days").
+
+**Sequence timeline (full width, below header):**
+A horizontal stepper showing each email as a numbered node. Between nodes, a line with the delay shown (e.g., "Day 2", "Day 4"). Each node is a circle with the email number. Below each node: the email's single-word purpose label (e.g., "Welcome", "Value", "Story", "Objection", "Ask"). Nodes are color-coded: green if marked ready, gray if not.
+
+**Email detail panel (full width, below timeline):**
+Clicking a node reveals that email's detail card:
+- Subject line in large type with a "Copy" button
+- Preview text in smaller type, italicized, with a "Copy" button
+- A divider, then the full email body in readable format — short paragraphs, line breaks preserved
+- The CTA shown in a distinct button-style box at the bottom
+- A "Mark as ready" checkbox in the top-right corner of the card
+
+The panel slides open smoothly when a node is clicked. Clicking the active node again collapses it.
+
+**Subject line variants (if provided):**
+Below the primary subject line, a "Alternatives" disclosure toggle. Clicking it reveals 2 alternative subject lines as a simple list, each with a copy button.
+
+### Interactive Behaviors
+
+- **Clicking a timeline node** opens that email's detail panel, closes any other open panel
+- **"Mark as ready" checkbox** on each email updates that node to green and increments the progress bar in the header
+- **Copy buttons** on subject lines, preview text, and full email body copy that content to clipboard
+- **Sequence type filter** (if multiple sequences were produced): tabs above the timeline to switch between them
+
+### Design
+
+Timeline nodes: 32px circles, 2px border. Active/selected node: filled with accent color. Ready node: filled green (#16a34a). Gray for pending. The connecting line between nodes is 2px, gray (#d1d5db). Email detail card has a light background (#f9fafb), 1px border, 16px padding. Body text line-height 1.7 for readability.

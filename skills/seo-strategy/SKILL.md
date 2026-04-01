@@ -56,14 +56,6 @@ SEO is a wide discipline. Get specific about what's needed.
 
 Before recommendations, understand where things stand. If a website URL is available, analyze what can be assessed. If not, work from what the user tells you.
 
-**Before flagging anything as missing, ask first:**
-- Do you have Google Search Console set up? If yes, can you share a screenshot of the Performance report?
-- Do you use any SEO tools (Ahrefs, Semrush, Moz, Screaming Frog, etc.)? Do you have any existing reports?
-- Do you have Google Analytics or another analytics tool set up?
-- Has any SEO work been done on this site before — by you or someone else?
-
-Note what's confirmed before generating recommendations. Don't flag tools as missing if the user says they already have them.
-
 **Foundation questions:**
 - What platform is the site on? (WordPress, Squarespace, Shopify, Webflow, custom, etc.) — This determines what's technically possible.
 - Has the site been live for less than a year, 1–3 years, or longer? — Age and history affect authority.
@@ -417,10 +409,6 @@ Never present a flat list of every possible SEO improvement. Prioritize by impac
 | P3 — Ongoing | High impact, high effort or ongoing. (Content strategy, link building, technical overhaul) |
 | P4 — Nice to have | Low impact improvements. Address after P1–P3 are done. |
 
-**Label every recommendation with a confidence level:**
-- **[Verified]** — confirmed from data or screenshots the user provided
-- **[Inferred]** — based on observation or pattern recognition; user should confirm before acting
-
 Present recommendations in this format:
 ```
 ## [Area: e.g., On-Page Optimization]
@@ -474,16 +462,35 @@ Before presenting any SEO analysis or recommendations:
 
 ## Visual Output
 
-Generate an interactive **SEO Audit Checklist** — a categorized, prioritized checklist with progress tracking and confidence indicators on every item.
+Generate an interactive HTML artifact: an **SEO Audit Checklist** — a categorized, prioritized checklist with a live progress tracker.
 
-**What it shows:**
-- An overall progress indicator (items addressed vs. total) with a breakdown of how many P1, P2, and P3 items remain
-- Category tabs (Technical SEO / On-Page / Content / Local SEO / AI Search) each with their own item count and progress indicator
-- Each recommendation as a checklist row showing: the item, its priority level (P1 / P2 / P3), and a confidence indicator (Verified — confirmed from data the user provided, or Inferred — based on observation without direct confirmation)
-- Expandable detail on each item: the issue, why it matters, and the specific fix
+### Layout
 
-**What the user can do:**
-- Check off items as addressed — updates the progress counts and category indicators
-- Expand any item to read the full issue/fix detail
-- Filter to show only P1, P2, or P3 items across all categories
-- Switch category tabs while preserving check states
+**Header bar (full width):**
+"SEO Audit — [Business Name]" on the left. Center: overall progress — "X of Y items addressed" with a progress bar beneath. Right: three small priority counts — "P1: X remaining / P2: X / P3: X" in color-coded text.
+
+**Category tabs (below header):**
+Five tabs: Technical SEO / On-Page / Content / Local SEO / AI Search. Each tab has a small badge showing its own item count and a mini progress bar beneath the tab label. The active tab is underlined. Clicking switches the checklist below.
+
+**Filter bar (below tabs):**
+Three pill buttons: All Priorities / P1 Quick Wins / P2 Plan / P3 Ongoing. Toggling a pill filters the visible items within the active category tab.
+
+**Checklist (below filter bar):**
+Each item is a row:
+- Left: a checkbox
+- Center: the recommendation text in normal weight
+- Right: a priority badge (P1 = red, P2 = amber, P3 = gray)
+- Below the recommendation text: collapsed detail — clicking the row expands it to show three sub-rows: "Issue:" / "Why it matters:" / "Fix:" — each as a label + description pair
+
+Completed items (checked) move to the bottom of their category and display with strikethrough text and reduced opacity.
+
+### Interactive Behaviors
+
+- **Checking an item** moves it to the bottom of its list, applies strikethrough, reduces opacity, and increments the progress bar in the header and the category tab's mini bar
+- **Clicking a row** (not the checkbox) expands or collapses the Issue / Why / Fix detail
+- **Priority pill filters** show only items of that priority across the active tab
+- **Tab switching** preserves check states — progress persists across tab switches
+
+### Design
+
+P1 badge: red background (#fef2f2), red text (#dc2626). P2 badge: amber background (#fffbeb), amber text (#d97706). P3 badge: gray background (#f3f4f6), gray text (#6b7280). Completed rows: opacity 0.45, text-decoration line-through. Expanded detail rows have a subtle left border (#e5e7eb) and smaller font size (13px). Tab mini progress bars: 3px height, full width of the tab.

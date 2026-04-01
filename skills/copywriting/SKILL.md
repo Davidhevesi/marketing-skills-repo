@@ -33,13 +33,6 @@ Don't start writing without at least knowing: who the copy is for, what action i
 
 Before anything else, get clear on exactly what needs to be written. Ask if not obvious:
 
-**Before writing, ask:**
-- Is there existing copy for this page or section we're improving, or are we starting from scratch? If improving, share the current version.
-- Do you have any performance data on existing copy? (Conversion rate, click rate, or even anecdotal feedback like "people always ask what we do")
-- Has this message been tested before — in ads, emails, or pitches — and did anything resonate or fall flat?
-
-Existing copy and performance data are far more useful than a blank slate.
-
 **What type of copy?**
 - Website section (hero, about, services, pricing, FAQ)
 - Landing page (full page or section)
@@ -370,15 +363,38 @@ Flag these and fix them before presenting any copy:
 
 ## Visual Output
 
-Generate an interactive **Copy Review Panel** — the finished copy displayed alongside a live self-edit scorecard.
+Generate an interactive HTML artifact: a **Copy Review Panel** — the finished copy displayed with a live self-edit scorecard the user can work through.
 
-**What it shows:**
-- The finished copy rendered in context (headline in appropriate scale, body text, CTA distinguished from body)
-- Variant tabs if alternatives were produced, allowing the user to switch between versions
-- A self-edit scorecard with the six filters (Swap Test, Reader Test, Clarity Test, Specificity Test, CTA Test, Voice Test) shown as pass/fail items, with an overall score calculated from them
-- A key decisions section explaining the framework used and the 2–3 structural choices made
+### Layout
 
-**What the user can do:**
-- Toggle any filter between pass and fail — the overall score updates in real time
-- Switch between copy variants — the scorecard updates to reflect Claude's assessment for each
-- Copy the current variant's full text to clipboard
+**Header bar (full width):**
+Left: copy type and framework used (e.g., "Homepage Hero · PAS Framework"). Center: a copy score from 0–100, calculated as the percentage of self-edit filters passing. Right: a "Copy to clipboard" button for the final copy.
+
+**Two-column layout below:**
+
+**Left column (60%) — The Copy:**
+The finished copy rendered exactly as it would appear in context — headline in larger type, body in normal weight, CTA in a distinct button-style box. If variants were produced, show them as tabs above the copy area ("Version A / Version B / Version C"). Clicking a tab switches the copy shown. Each variant tab has its own clipboard copy button.
+
+**Right column (40%) — Self-Edit Scorecard:**
+Six filter rows, one per self-edit check:
+- Swap Test (Is this differentiated?)
+- Reader Test (Does it serve the reader, not the brand?)
+- Clarity Test (No stumbles when read aloud?)
+- Specificity Test (No placeholder language?)
+- CTA Test (One specific, friction-free ask?)
+- Voice Test (Matches brand voice guide?)
+
+Each row has: filter name, one-sentence description, and a pass/fail toggle (✓ / ✗). Toggles start in the state Claude assessed — user can override. Each toggle updates the score in the header.
+
+**Below the two columns — Key Decisions (full width):**
+A thin card showing 2–3 brief notes explaining the choices made: which framework and why, any voice decisions, any structural choices. Displayed as a simple list with a subtle left border.
+
+### Interactive Behaviors
+
+- **Toggling a filter** recalculates the score in the header in real time
+- **Switching variant tabs** swaps the copy in the left column; scorecard resets to Claude's assessment for that variant
+- **Copy button** copies the currently displayed copy (formatted cleanly, no HTML) to clipboard
+
+### Design
+
+Copy area has a slightly off-white background (#fafafa) to visually distinguish it from the scorecard. Filter rows alternate between white and #f9fafb. Pass state: green check (#16a34a). Fail state: red X (#dc2626). Score displayed as a large number with a small circular progress ring around it.

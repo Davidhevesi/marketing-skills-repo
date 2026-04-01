@@ -29,14 +29,6 @@ Look for a **Business Context** document in the project knowledge files.
 
 Audience research without a goal produces interesting data that never gets used. Start with what decision the research needs to inform.
 
-**Before starting, ask what already exists:**
-- Have you done any audience research before? (Surveys, interviews, review analysis, customer feedback forms?)
-- Do you have existing data I can work from — survey results, interview notes, customer emails, intake form responses?
-- What do you already believe about your audience that you want to confirm or challenge?
-- Is there a specific gap in your understanding that prompted this research?
-
-Start from what's already known. Research that confirms existing assumptions has lower value than research that fills genuine gaps.
-
 **What are we trying to learn?**
 - What language does my audience use to describe their problem? (for copywriting)
 - Why do people buy — and why do they hesitate? (for conversion optimization)
@@ -485,11 +477,6 @@ Compile findings into a usable document.
 
 ---
 
-**Label every finding with a source and confidence level:**
-- **[Verified — N sources]** — appears across multiple independent sources
-- **[Single source]** — came from one place; treat as a hypothesis until confirmed elsewhere
-- **[Inferred]** — a pattern read from the data, not a direct quote or stated finding
-
 ## The Before State
 **How they describe their situation:**
 - "[exact quote]" — [source]
@@ -620,16 +607,47 @@ Research options are limited but not zero:
 
 ## Visual Output
 
-Generate an interactive **Research Insights Board** — a Kanban-style board of quote cards organized by insight type, with a searchable language glossary.
+Generate an interactive HTML artifact: a **Research Insights Board** — a Kanban-style board of quote cards organized by insight type, with a searchable language glossary.
 
-**What it shows:**
-- A research summary showing methods used (as badges), total quotes captured, and key insights count
-- Five insight columns (Before State / Triggers / Hesitations / Desired Outcome / Decision Factors), each with quote cards showing the verbatim quote, its source, and a star to mark headline-worthy quotes
-- A language glossary below the board with "Use these" and "Avoid these" word chips
+### Layout
 
-**What the user can do:**
-- Click a quote card to expand it and see the full quote, source, and implication note
-- Star a card to mark it as headline-worthy
-- Filter all columns to show only starred cards using a "Top Quotes" button
-- Search the language glossary — filters both word lists in real time
-- Copy all starred quotes as a formatted list with one button
+**Header bar (full width):**
+"Audience Research — [Business Name]" on the left. Center: research summary — methods used as small badges (e.g., "Review Mining · Interviews · Forums"). Right: total quotes captured and key insights count.
+
+**Five-column insight board (below header):**
+Five equal columns:
+1. **Before State** — how they describe their situation before finding a solution
+2. **Triggers** — what makes them start looking
+3. **Hesitations** — what almost stops them
+4. **Desired Outcome** — what they actually want
+5. **Decision Factors** — why they chose / what convinced them
+
+Each column has:
+- Column header with the insight type name
+- A count badge showing number of cards
+- Quote cards stacked below
+
+Each quote card shows:
+- The verbatim quote in quotation marks
+- Source badge below the quote (e.g., "Google Review", "Interview", "Reddit")
+- A small star icon to mark a quote as "headline-worthy"
+
+Clicking a card expands it to show:
+- Full quote
+- Source and date
+- An "Implication" note: what this means for marketing
+
+**Language Glossary (below the board, full width):**
+Two side-by-side sections: "Use these words" and "Avoid these words." Each word or phrase displayed as a chip. "Use" chips: green-tinted. "Avoid" chips: red-tinted. A search input at the top of the glossary filters both sections in real time.
+
+### Interactive Behaviors
+
+- **Clicking a card** expands it inline with the full quote and implication note
+- **Starring a card** (clicking the star icon) marks it as headline-worthy and adds it to a "Top Quotes" filtered view
+- **"Top Quotes" filter button** above the board filters all columns to show only starred cards
+- **Glossary search** filters chips in real time as the user types
+- **"Copy all top quotes"** button copies all starred quotes as a formatted list to clipboard
+
+### Design
+
+Columns: equal width, 1px border between (#e5e7eb), 12px padding, light background (#f9fafb). Quote cards: white, 1px border, 10px radius, 12px padding. Quote text: italic, slightly larger (15px). Source badge: small, gray background, muted text. Starred cards: thin left border in amber (#f59e0b). "Use" chips: #dcfce7 background, #15803d text. "Avoid" chips: #fee2e2 background, #dc2626 text. The board scrolls horizontally on narrow viewports.
