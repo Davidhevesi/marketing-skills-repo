@@ -99,7 +99,7 @@ The `business-context` skill is the foundation. **Set it up first.** Every other
 ### SEO & Web Presence
 | Skill | Description | Status |
 |---|---|---|
-| [seo-strategy](skills/seo-strategy) | Technical SEO, on-page optimization, keyword research, AI search optimization, and local SEO. | 🔜 Coming soon |
+| [seo-strategy](skills/seo-strategy) | Technical SEO, on-page optimization, keyword research, AI search optimization, and local SEO. | ✅ Available |
 | [website-optimization](skills/website-optimization) | Page conversion optimization, site structure, user flow, trust building, mobile experience. | 🔜 Coming soon |
 
 ### Growth & Client Acquisition
@@ -138,7 +138,7 @@ The `business-context` skill is the foundation. **Set it up first.** Every other
 - [x] `brand-voice` — Voice consistency
 - [x] `email-marketing` — Email campaigns & sequences
 - [x] `social-content` — Social media content
-- [ ] `seo-strategy` — Search optimization
+- [x] `seo-strategy` — Search optimization
 - [ ] `website-optimization` — Conversion & UX
 - [ ] `lead-generation` — Lead acquisition
 - [ ] `client-communication` — Client-facing comms
