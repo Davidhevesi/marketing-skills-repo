@@ -93,7 +93,7 @@ The `business-context` skill is the foundation. **Set it up first.** Every other
 | Skill | Description | Status |
 |---|---|---|
 | [copywriting](skills/copywriting) | Full-process marketing copywriting — from research to draft to self-edit to final. Headlines, CTAs, value props, service descriptions. | ✅ Available |
-| [email-marketing](skills/email-marketing) | Welcome sequences, nurture campaigns, cold outreach, re-engagement, newsletters. | 🔜 Coming soon |
+| [email-marketing](skills/email-marketing) | Welcome sequences, nurture campaigns, cold outreach, re-engagement, newsletters. | ✅ Available |
 | [social-content](skills/social-content) | Platform-specific content creation with calendar framework. Instagram, LinkedIn, TikTok, X. | 🔜 Coming soon |
 
 ### SEO & Web Presence
@@ -136,7 +136,7 @@ The `business-context` skill is the foundation. **Set it up first.** Every other
 - [x] `business-context` — Foundation skill
 - [x] `copywriting` — Marketing copy
 - [x] `brand-voice` — Voice consistency
-- [ ] `email-marketing` — Email campaigns & sequences
+- [x] `email-marketing` — Email campaigns & sequences
 - [ ] `social-content` — Social media content
 - [ ] `seo-strategy` — Search optimization
 - [ ] `website-optimization` — Conversion & UX
