@@ -111,7 +111,7 @@ The `business-context` skill is the foundation. **Set it up first.** Every other
 ### Strategy & Research
 | Skill | Description | Status |
 |---|---|---|
-| [marketing-strategy](skills/marketing-strategy) | 90-day marketing plans, channel selection, budget allocation, goal setting, KPI frameworks. | 🔜 Coming soon |
+| [marketing-strategy](skills/marketing-strategy) | 90-day marketing plans, channel selection, budget allocation, goal setting, KPI frameworks. | ✅ Available |
 | [audience-research](skills/audience-research) | Deep customer research — review mining, competitor audience analysis, survey design, language patterns. | 🔜 Coming soon |
 | [competitor-analysis](skills/competitor-analysis) | Full competitive landscape — positioning gaps, pricing comparison, messaging differentiation. | 🔜 Coming soon |
 
@@ -142,7 +142,7 @@ The `business-context` skill is the foundation. **Set it up first.** Every other
 - [x] `website-optimization` — Conversion & UX
 - [x] `lead-generation` — Lead acquisition
 - [x] `client-communication` — Client-facing comms
-- [ ] `marketing-strategy` — Strategic planning
+- [x] `marketing-strategy` — Strategic planning
 - [ ] `audience-research` — Customer research
 - [ ] `competitor-analysis` — Competitive intelligence
 
