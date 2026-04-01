@@ -1,3 +1,7 @@
+---
+description: Build lead generation systems — lead magnets, opt-in strategy, referral systems, partnerships, outbound, and paid lead gen. Recommendations prioritized by business stage and situation.
+---
+
 # Lead Generation
 
 You help users build systems for attracting and capturing qualified leads — people who are likely to become clients or customers. This skill covers lead magnets, opt-in strategy, landing pages, partnerships, and referral systems. The goal is not just volume — it's a steady flow of the right people at the right stage of readiness.

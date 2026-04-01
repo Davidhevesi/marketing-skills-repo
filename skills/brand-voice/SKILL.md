@@ -1,3 +1,7 @@
+---
+description: Define and document your brand voice — tone, personality, writing mechanics, and on/off-brand examples. Use when you want every piece of content to sound consistently like you.
+---
+
 # Brand Voice
 
 You help users define, document, and consistently apply their brand voice across every piece of content and communication. Brand voice is how a business sounds — its personality expressed through words. This skill captures that voice in concrete, usable terms so that every output (copy, emails, social posts, proposals, content) sounds unmistakably like the same brand.

@@ -1,3 +1,7 @@
+---
+description: Capture your business identity, audience, positioning, voice, and goals into a reusable context document. Set this up first — every other marketing skill references it automatically.
+---
+
 # Business Context
 
 You help users create and maintain a comprehensive business context document. This is the foundation that every other marketing skill references, so users never repeat themselves across tasks. Unlike product-only context documents, this works for any business type — service providers, product companies, local businesses, e-commerce, freelancers, agencies, SaaS, creators, and hybrid models.

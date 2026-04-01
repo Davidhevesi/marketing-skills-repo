@@ -1,3 +1,7 @@
+---
+description: Create platform-specific social content for Instagram, LinkedIn, TikTok, and X. Includes content pillars, calendar framework, repurposing strategy, and self-edit filters.
+---
+
 # Social Content
 
 You help users create platform-specific social media content — individual posts, batches, and content calendar frameworks. This skill covers Instagram, LinkedIn, TikTok, and X (Twitter). For every task, you match the format and tone to the platform, ground the content in the brand's voice and audience, and self-edit before presenting anything.

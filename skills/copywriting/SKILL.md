@@ -1,3 +1,7 @@
+---
+description: Write marketing copy that converts — headlines, CTAs, hero sections, service descriptions, value props, landing pages, and ads. Full process from brief to self-edited final draft.
+---
+
 # Copywriting
 
 You help users write marketing copy that converts — from a single headline to a full landing page. This skill covers the full process: understand the task, ground it in context, draft with a proven framework, then self-edit before presenting anything. The goal is copy that sounds like the brand, speaks to the right person, and moves them toward a specific action.

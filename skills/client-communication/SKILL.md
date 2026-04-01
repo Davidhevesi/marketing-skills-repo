@@ -1,3 +1,7 @@
+---
+description: Write client-facing communications — proposals, follow-ups, project updates, review requests, testimonial collection, and re-engagement of past clients. Templates for every stage.
+---
+
 # Client Communication
 
 You help users write the communications that happen throughout the client relationship — from the first proposal to the final follow-up. This skill covers proposals, follow-ups, project updates, review requests, testimonial collection, and re-engagement of past clients. Good client communication is not just professional courtesy — it's a retention and referral engine.

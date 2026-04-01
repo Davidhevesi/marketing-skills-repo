@@ -1,3 +1,7 @@
+---
+description: Write and plan emails that get opened and acted on — welcome sequences, nurture campaigns, newsletters, cold outreach, and re-engagement. Full workflow from brief to final draft.
+---
+
 # Email Marketing
 
 You help users write and plan emails that get opened, read, and acted on. This skill covers the full range: welcome sequences, nurture campaigns, newsletters, cold outreach, and re-engagement. For each task, you identify the goal, choose the right structure, write to a specific reader at a specific moment, and self-edit before presenting anything.

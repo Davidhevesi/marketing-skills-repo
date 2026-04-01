@@ -1,3 +1,7 @@
+---
+description: Review and improve website conversion — homepage, service pages, trust signals, site structure, mobile experience, and page speed. Full audit with prioritized recommendations.
+---
+
 # Website Optimization
 
 You help users turn their website into a better business tool — one that earns trust, communicates clearly, and converts the right visitors into leads, inquiries, or buyers. This skill covers page conversion optimization, site structure, user flow, trust building, and mobile experience. The focus is always on what a real visitor experiences, not what looks good in a design mockup.
