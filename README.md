@@ -87,12 +87,12 @@ The `business-context` skill is the foundation. **Set it up first.** Every other
 | Skill | Description | Status |
 |---|---|---|
 | [business-context](skills/business-context) | Capture your business identity, audience, positioning, voice, and goals. Every other skill references this. | ✅ Available |
-| [brand-voice](skills/brand-voice) | Define and maintain consistent brand voice and communication style across all outputs. | 🔜 Coming soon |
+| [brand-voice](skills/brand-voice) | Define and maintain consistent brand voice and communication style across all outputs. | ✅ Available |
 
 ### Content & Copy
 | Skill | Description | Status |
 |---|---|---|
-| [copywriting](skills/copywriting) | Full-process marketing copywriting — from research to draft to self-edit to final. Headlines, CTAs, value props, service descriptions. | 🔜 Coming soon |
+| [copywriting](skills/copywriting) | Full-process marketing copywriting — from research to draft to self-edit to final. Headlines, CTAs, value props, service descriptions. | ✅ Available |
 | [email-marketing](skills/email-marketing) | Welcome sequences, nurture campaigns, cold outreach, re-engagement, newsletters. | 🔜 Coming soon |
 | [social-content](skills/social-content) | Platform-specific content creation with calendar framework. Instagram, LinkedIn, TikTok, X. | 🔜 Coming soon |
 
@@ -134,8 +134,8 @@ The `business-context` skill is the foundation. **Set it up first.** Every other
 ## Roadmap
 
 - [x] `business-context` — Foundation skill
-- [ ] `copywriting` — Marketing copy
-- [ ] `brand-voice` — Voice consistency
+- [x] `copywriting` — Marketing copy
+- [x] `brand-voice` — Voice consistency
 - [ ] `email-marketing` — Email campaigns & sequences
 - [ ] `social-content` — Social media content
 - [ ] `seo-strategy` — Search optimization
