@@ -589,38 +589,16 @@ These apply across every type of client communication:
 
 ## Visual Output
 
-Generate an interactive HTML artifact: a **Communication Template Library** — a tabbed reference of ready-to-send templates organized by relationship stage.
+Generate an interactive **Communication Template Library** — a tabbed reference of ready-to-send templates organized by relationship stage.
 
-### Layout
+**What it shows:**
+- A summary of total templates generated and a voice-match status indicator
+- Four stage tabs (Prospects / Active Clients / Post-Project / Past Clients) with a badge showing how many templates are in each stage
+- Template cards showing the template's purpose, subject line (for emails), and a preview of the opening lines
+- Self-check indicators on each template: one clear next step, sounds like a person, appropriate length — shown as pass or needs-review
 
-**Header bar (full width):**
-"Client Communications — [Business Name]" on the left. Center: total templates generated. Right: a voice-match indicator — "Voice checked ✓" if all templates passed the voice test, or "X templates need review" in amber if any failed.
-
-**Stage tabs (below header):**
-Four tabs representing the relationship lifecycle: **Prospects / Active Clients / Post-Project / Past Clients.** Each tab has a badge showing how many templates are in that stage.
-
-**Template cards (below tabs, in the active stage):**
-Each template displays as a card:
-- Template title (e.g., "Proposal", "Follow-Up #1", "Milestone Update", "Review Request")
-- Purpose line in muted text (one sentence on what this communication achieves)
-- Subject line (for emails) shown in a distinct box below the purpose line
-- First 2 lines of the template body, faded out at the bottom edge
-- Two buttons: "Expand" to read the full template, "Copy" to copy it to clipboard
-
-**Expanded template view (inline, below the card):**
-Full template with:
-- Subject line (if email) with its own copy button
-- Template body with proper formatting — line breaks, spacing preserved
-- Any inline notes shown as [bracketed instructions] in a different color to distinguish them from the actual send text
-- A self-check row at the bottom: three small indicators — "One clear next step ✓", "Sounds like a person ✓", "Appropriate length ✓" — or amber warnings if any failed
-
-### Interactive Behaviors
-
-- **Stage tabs** switch the template list; active tab is underlined
-- **"Expand"** opens the full template inline below the card; clicking again collapses it
-- **"Copy"** copies the full template body (without the bracketed instructions — those are stripped) to clipboard. Shows a brief "Copied ✓" tooltip
-- **Self-check indicators** at the bottom of expanded templates are clickable toggles — the user can override Claude's assessment
-
-### Design
-
-Template cards: white, 1px border (#e5e7eb), 12px radius. Subject line box: light gray background (#f3f4f6), monospace-adjacent font, 8px padding. Body preview: faded with a CSS gradient mask at the bottom edge. [Bracketed instructions]: displayed in italic amber (#d97706). Self-check indicators: small pills — green (#dcfce7/#15803d) for pass, amber (#fffbeb/#d97706) for needs review.
+**What the user can do:**
+- Switch between stages using the tabs
+- Expand a template card to read the full text inline
+- Copy the full template body to clipboard (bracketed instructions stripped from the output)
+- Toggle any self-check indicator to override Claude's assessment

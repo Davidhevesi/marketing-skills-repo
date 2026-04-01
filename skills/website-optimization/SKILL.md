@@ -78,6 +78,14 @@ Use this framework for a full site review. Work through each area systematically
 
 The homepage serves the most diverse audience of any page on the site — it gets first-time visitors, returning visitors, referrals, and people who searched the business name. It needs to work for all of them.
 
+**Before evaluating, ask:**
+- Do you have analytics data? (Bounce rate, time on page, exit rates, top landing pages)
+- Do you use heatmap or session recording tools? (Hotjar, Microsoft Clarity, etc.) Can you share relevant data?
+- Are there specific pages you already know are underperforming?
+- Have you gotten direct feedback from visitors about anything that confused them?
+
+Analytics data turns inferred issues into verified ones. Work with what's available and label findings accordingly.
+
 **What to evaluate:**
 
 **Above the fold (first visible screen, no scrolling)**
@@ -258,6 +266,10 @@ Same framework as SEO — never present a flat list of everything. Prioritize by
 | P3 — Ongoing / planned | High impact, high effort or ongoing work. |
 | P4 — Nice to have | Low impact; address after P1–P3. |
 
+**Label every finding with a confidence level:**
+- **[Verified]** — confirmed from analytics, heatmap data, or direct evidence the user provided
+- **[Inferred]** — based on reviewing the site without supporting data; should be tested before treating as certain
+
 Present recommendations in this format:
 ```
 ## [Page or Area]
@@ -368,39 +380,15 @@ For creative and service businesses, the portfolio page is a trust and conversio
 
 ## Visual Output
 
-Generate an interactive HTML artifact: a **Site Audit Dashboard** — a page-by-page issue tracker with priority-coded fixes.
+Generate an interactive **Site Audit Dashboard** — a page-by-page issue tracker with priority indicators and confidence levels on every finding.
 
-### Layout
+**What it shows:**
+- An overall summary of issues found, broken down by priority (critical / moderate / low)
+- A page navigation panel listing all audited pages and areas, with an indicator showing the worst unresolved issue on each
+- Issue cards for the selected page, each showing: the priority level, the issue, why it matters, the specific fix, and a confidence indicator (Verified — confirmed from analytics or direct evidence provided, or Inferred — based on observation)
+- An overall site score calculated as resolved issues divided by total issues
 
-**Header bar (full width):**
-"Website Audit — [Business Name]" on the left. Center: total issues found with a breakdown — "X critical · X moderate · X low." Right: an overall site score (0–100) calculated as (resolved issues / total issues × 100), displayed as a large number with a label beneath ("Site Score").
-
-**Two-column layout below header:**
-
-**Left column (25%) — Page navigator:**
-A vertical list of all audited pages/areas (Homepage, Services, About, Contact, Trust Signals, Navigation, Mobile, Speed). Each row shows:
-- Page name
-- A small dot color-coded by worst unresolved issue (red = P1 unresolved, amber = P2, green = all resolved)
-- Issue count badge (e.g., "3 issues")
-Clicking a page selects it and loads its issues in the right column.
-
-**Right column (75%) — Issue cards:**
-For the selected page, each issue is a card:
-- Header row: issue title + priority badge (P1 / P2 / P3) on the right
-- "Issue:" line in normal weight
-- "Why it matters:" line in muted gray
-- "Fix:" line in normal weight — this is the actionable instruction
-- Bottom row: a "Resolved" checkbox on the left
-
-Cards are sorted by priority (P1 first). Resolved cards move to the bottom and collapse to a single line with strikethrough title.
-
-### Interactive Behaviors
-
-- **Clicking a page** in the left nav loads that page's issues in the right column
-- **Checking "Resolved"** on an issue card collapses it, moves it to the bottom, updates the page dot color in the nav, updates the header score and counts
-- **Clicking any collapsed (resolved) card** re-expands it if needed
-- **Priority badge** on each card is clickable — clicking it cycles through P1 / P2 / P3 to let the user re-prioritize
-
-### Design
-
-Left nav: background #f9fafb, 1px right border. Selected page row: white background, left accent border (3px, brand color). Issue cards: white, 1px border (#e5e7eb), 12px radius. P1 badge: red. P2 badge: amber. P3 badge: gray. Resolved cards: opacity 0.4, strikethrough on title. The site score number: large (48px), colored green if ≥70, amber if 40–69, red if <40.
+**What the user can do:**
+- Click a page in the navigation to load its issue cards
+- Check "Resolved" on an issue to collapse it and update the page indicator and overall score
+- Re-prioritize an item by clicking its priority badge to cycle through levels

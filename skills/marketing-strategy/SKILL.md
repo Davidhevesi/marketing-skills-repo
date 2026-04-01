@@ -55,6 +55,13 @@ Strategy work comes in different shapes. Get specific.
 
 Before recommending anything, understand the current state clearly. Strategy built on assumptions is guesswork.
 
+**Before building the strategy, ask for real numbers where possible:**
+- Can you share any analytics? (Website traffic, monthly revenue, leads per month — even rough estimates)
+- What does your current pipeline look like? (Active leads, sales cycle length, close rate)
+- Do you have any channel-level data? (Email open rates, social reach, ad spend and results)
+
+Recommendations grounded in actual numbers are materially better than ones based on described situations. Note where recommendations rely on estimates rather than confirmed data.
+
 **Pull from Business Context if available. Otherwise ask:**
 
 #### What's the current pipeline situation?
@@ -509,45 +516,17 @@ Before presenting the strategy:
 
 ## Visual Output
 
-Generate an interactive HTML artifact: a **90-Day Strategy Dashboard** — a complete, interactive view of the strategy with progress tracking built in.
+Generate an interactive **90-Day Strategy Dashboard** — a complete, working view of the strategy with live progress tracking.
 
-### Layout
+**What it shows:**
+- The primary goal and strategic posture displayed prominently
+- Three month columns (Month 1: Foundation / Month 2: Execution / Month 3: Optimize) with checkable task lists and a progress count per month
+- Channel cards showing each channel's name, cadence, and goal
+- A KPI tracker with one row per leading indicator, showing the weekly target alongside an editable input for the current number
+- A "Not Doing" list as a scope reference
 
-**Header bar (full width):**
-Primary goal on the left (large, bold). Center: a 90-day progress bar showing what day of the plan it is (or "Day 0 — Starting now" if just created). Right: strategic posture badge (e.g., "Posture: Convert") and days remaining.
-
-**Three-column month view (below header):**
-Three equal columns: Month 1 — Foundation / Month 2 — Execution / Month 3 — Optimize. Each column:
-- Month label + date range at the top
-- Focus theme in muted text
-- Task checklist below — each task is a checkbox row
-- A mini progress bar at the bottom of the column: X of Y tasks done
-
-**Channel section (below month columns, full width):**
-Two or three channel cards side by side. Each card:
-- Channel name as the header
-- "Primary" or "Supporting" badge
-- Why this channel: one sentence
-- Cadence: shown as a simple schedule chip (e.g., "3x / week")
-- Goal: what this channel is expected to deliver
-
-**KPI Tracker (below channels, full width):**
-A table with one row per leading indicator:
-- Indicator name
-- Weekly target
-- "This week" — an editable input field where the user types in their current number
-- A small status indicator: green if at/above target, amber if below, gray if empty
-
-**"Not Doing" section (below KPIs, full width):**
-A list of consciously skipped tactics, each as a pill with an × icon, in a light gray style. Serves as a visual reminder of scope boundaries.
-
-### Interactive Behaviors
-
-- **Month task checkboxes** update that month's mini progress bar and the overall header progress
-- **KPI input fields** are editable — typing a number updates the status indicator in real time (compares against the target)
-- **Channel cards** are expandable — clicking reveals the full channel plan including cadence, goal, and weekly time commitment
-- **"Not Doing" pills** are dismissible — clicking × removes them (with an undo option for 3 seconds)
-
-### Design
-
-Month columns: equal width, separated by 1px vertical dividers (#e5e7eb). Active month (based on current date) has a subtle blue-tinted header background. KPI table: clean rows with alternating #ffffff / #f9fafb. Editable input fields: borderless with a bottom border only (underline style). Status indicators: small colored dots — green (#16a34a), amber (#d97706), gray (#9ca3af). "Not Doing" pills: gray background (#f3f4f6), muted text (#6b7280).
+**What the user can do:**
+- Check off tasks in each month column — updates that month's progress count
+- Type current numbers into KPI input fields — a status indicator updates in real time against the target
+- Expand channel cards to see the full channel plan
+- Dismiss items from the "Not Doing" list
