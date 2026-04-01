@@ -1,4 +1,5 @@
 ---
+name: seo-strategy
 description: Audit and improve search visibility — keyword research, on-page optimization, technical SEO, local SEO, content strategy, and AI search optimization. Prioritized recommendations.
 ---
 

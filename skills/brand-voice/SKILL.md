@@ -1,4 +1,5 @@
 ---
+name: brand-voice
 description: Define and document your brand voice — tone, personality, writing mechanics, and on/off-brand examples. Use when you want every piece of content to sound consistently like you.
 ---
 

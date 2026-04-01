@@ -1,4 +1,5 @@
 ---
+name: client-communication
 description: Write client-facing communications — proposals, follow-ups, project updates, review requests, testimonial collection, and re-engagement of past clients. Templates for every stage.
 ---
 

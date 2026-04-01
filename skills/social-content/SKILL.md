@@ -1,4 +1,5 @@
 ---
+name: social-content
 description: Create platform-specific social content for Instagram, LinkedIn, TikTok, and X. Includes content pillars, calendar framework, repurposing strategy, and self-edit filters.
 ---
 

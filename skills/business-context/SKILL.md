@@ -1,4 +1,5 @@
 ---
+name: business-context
 description: Capture your business identity, audience, positioning, voice, and goals into a reusable context document. Set this up first — every other marketing skill references it automatically.
 ---
 

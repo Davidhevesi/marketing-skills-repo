@@ -1,4 +1,5 @@
 ---
+name: email-marketing
 description: Write and plan emails that get opened and acted on — welcome sequences, nurture campaigns, newsletters, cold outreach, and re-engagement. Full workflow from brief to final draft.
 ---
 

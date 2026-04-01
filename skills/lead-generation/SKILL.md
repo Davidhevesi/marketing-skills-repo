@@ -1,4 +1,5 @@
 ---
+name: lead-generation
 description: Build lead generation systems — lead magnets, opt-in strategy, referral systems, partnerships, outbound, and paid lead gen. Recommendations prioritized by business stage and situation.
 ---
 

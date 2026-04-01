@@ -1,4 +1,5 @@
 ---
+name: website-optimization
 description: Review and improve website conversion — homepage, service pages, trust signals, site structure, mobile experience, and page speed. Full audit with prioritized recommendations.
 ---
 

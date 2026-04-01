@@ -1,4 +1,5 @@
 ---
+name: copywriting
 description: Write marketing copy that converts — headlines, CTAs, hero sections, service descriptions, value props, landing pages, and ads. Full process from brief to self-edited final draft.
 ---
 
