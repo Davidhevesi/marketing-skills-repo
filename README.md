@@ -100,7 +100,7 @@ The `business-context` skill is the foundation. **Set it up first.** Every other
 | Skill | Description | Status |
 |---|---|---|
 | [seo-strategy](skills/seo-strategy) | Technical SEO, on-page optimization, keyword research, AI search optimization, and local SEO. | ✅ Available |
-| [website-optimization](skills/website-optimization) | Page conversion optimization, site structure, user flow, trust building, mobile experience. | 🔜 Coming soon |
+| [website-optimization](skills/website-optimization) | Page conversion optimization, site structure, user flow, trust building, mobile experience. | ✅ Available |
 
 ### Growth & Client Acquisition
 | Skill | Description | Status |
@@ -139,7 +139,7 @@ The `business-context` skill is the foundation. **Set it up first.** Every other
 - [x] `email-marketing` — Email campaigns & sequences
 - [x] `social-content` — Social media content
 - [x] `seo-strategy` — Search optimization
-- [ ] `website-optimization` — Conversion & UX
+- [x] `website-optimization` — Conversion & UX
 - [ ] `lead-generation` — Lead acquisition
 - [ ] `client-communication` — Client-facing comms
 - [ ] `marketing-strategy` — Strategic planning
