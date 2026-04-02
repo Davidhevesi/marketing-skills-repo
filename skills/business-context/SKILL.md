@@ -429,6 +429,36 @@ Each of the 11 sections renders as its own card with:
 - **Collapsible sections:** each card has a chevron to collapse/expand — useful for long sections like Customer Language or Social Proof
 - **"Copy all"** button in the header copies the full document as clean markdown
 
+### CRUD — Editing and Saving
+
+Every field in the dashboard is editable. The dashboard is a living document, not a static output.
+
+**Editing a field:**
+- Each field value has a small edit icon (pencil) that appears on hover
+- Clicking the pencil (or double-clicking the value) switches that field into an inline edit mode — the value becomes an editable input or textarea
+- For single-line fields (business name, one-liner, pricing): render as a text input
+- For multi-line fields (process description, problem description): render as an auto-expanding textarea
+- For list fields (core offerings, writing rules, testimonials): each list item is individually editable, with an "Add item" button at the bottom and a delete (×) button on each item
+
+**Saving changes:**
+- An "Save" button appears within the field while in edit mode — clicking it commits the change and returns to view mode
+- Pressing Enter (for single-line fields) or Cmd/Ctrl+Enter (for textareas) also saves
+- Pressing Escape cancels the edit and restores the previous value
+- After saving, the field briefly highlights to confirm the change was recorded
+- The completion status of the section updates automatically: if a previously empty field now has content, the section's badge updates and the progress bar in the header increments
+
+**Adding and removing list items:**
+- "Add item" appends a new empty input at the bottom of any list field — the user types the value and saves
+- Each existing list item has a delete button — clicking it removes the item after a brief confirmation (either an undo toast or a "click again to confirm" pattern)
+
+**Unsaved changes indicator:**
+- If edits have been made but not yet exported, a small indicator in the header shows "Unsaved changes"
+- The "Copy all" button (which exports the full document as markdown) always reflects the current state of all fields — saved or in-progress
+
+**Section-level actions:**
+- Each section card has a "Clear section" option (accessible from a ⋯ menu on the card) that resets all fields in that section to empty — useful when completely re-doing a section
+- Clearing a section updates its completion status to incomplete and decrements the progress bar
+
 ### Design
 
 White cards, 1px border (#e5e7eb), 12px border-radius, 16px padding. Section nav has a subtle background (#f9fafb). Typography: system font stack. Colors via CSS variables so it works in light and dark mode. No shadows, no gradients. Completion indicator uses a muted green (#16a34a). "Needs input" uses amber (#d97706).
