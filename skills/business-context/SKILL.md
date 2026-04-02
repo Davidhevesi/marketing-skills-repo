@@ -39,34 +39,70 @@ This determines which questions to ask and which to skip. A local restaurant doe
 
 ---
 
-### Step 2: Check for Existing Context
+### Step 2: Start with the Website
 
-**If the user already has a business context document:**
+**Ask first:** "Do you have a website? If so, share the URL and I'll analyze it to build your Business Context Dashboard automatically. If not, no problem — I'll guide you through the questions."
+
+**If a URL is provided:**
+- Analyze the homepage, about page, services/products pages, testimonials, blog, and footer
+- Extract all available information across the 11 sections
+- Tag each extracted field as **From website** (clearly stated) or **[Inferred]** (implied but not explicit)
+- Note which fields have no data — they'll be filled via follow-up questions
+- Proceed directly to Step 3 — generate the dashboard immediately
+
+**If no website is available:**
+- Switch to guided interview mode: walk through the sections conversationally, one at a time
+- Ask one section at a time — don't present all questions at once
+- Validate each section before moving to the next
+- Proceed to Step 3 once enough information is gathered to generate the initial dashboard
+
+**If an existing business context document is provided:**
 - Read it and summarize what's captured
-- Identify any gaps or outdated sections
-- Ask which sections they want to update
-- Only gather info for those sections
-
-**If starting fresh, offer two paths:**
-
-1. **Guided interview** (recommended for most users): Walk through each section conversationally, one at a time. Don't dump all questions at once. Confirm each section before moving to the next.
-
-2. **Website scan + fill gaps**: If the user provides their website URL, analyze the site — homepage, about page, services/products pages, testimonials, blog — and draft a V1. Then ask: "What needs correcting? What's missing? What doesn't sound like you?"
-
-Most users should start with option 1. Option 2 works best when the business already has a well-developed website.
+- Identify gaps and outdated sections
+- Ask which sections to update
+- Regenerate the dashboard with the updated information
 
 ---
 
-### Step 3: Gather Information
+### Step 3: Generate the Initial Dashboard
 
-Walk through the sections below. Not every section applies to every business — use the business type from Step 1 to determine relevance. Skip sections that don't apply and note that in the document.
+**Do not wait for complete information. Generate the dashboard immediately** using whatever data is available — from the website scan, the guided interview, or both.
 
-**Important principles for gathering information:**
-- Ask one section at a time. Don't overwhelm with 20 questions.
-- Push for specifics. "What industry?" is better than "Tell me about your audience."
-- Capture exact language. How the user naturally describes things is often better than polished marketing speak.
-- Ask for examples. "Can you give me an example of a typical client?" unlocks more than "Who is your target audience?"
-- Validate as you go. Summarize each section back to the user before moving on.
+- Map all extracted and gathered data into the 11-section document structure
+- For fields with clear data: populate them directly
+- For fields that can be reasonably inferred from context: populate with an **[Inferred]** label
+- For fields with no data: leave blank — they will be filled via follow-up
+
+**Generate and present the dashboard artifact now**, before asking any follow-up questions. The dashboard is the starting point, not the endpoint.
+
+After generating, identify which fields are empty or marked [Inferred] and proceed to Step 4.
+
+---
+
+### Step 4: Follow-Up on Missing Fields
+
+After the dashboard is generated, review which fields are empty or only partially filled. Ask about the most important gaps conversationally — not as a form dump.
+
+**Prioritize missing fields in this order:**
+1. Business Identity (name, one-liner, business type) — if not captured
+2. Target Audience (ideal customer, primary trigger) — highest impact on all other skills
+3. The Problem You Solve — required for all copywriting and messaging work
+4. Differentiation & Positioning — required for strategic recommendations
+5. Goals & Success Metrics — required for strategy and channel selection
+
+**How to ask:**
+- Group related gaps: "Your website doesn't mention pricing or your typical client type — can you tell me about both?"
+- Keep it conversational, not a checklist
+- No more than 3–4 questions per message
+- After each batch of answers, update the dashboard and check for remaining gaps
+
+**Present the follow-up questions as:** "Here's what I couldn't find — can you fill in these gaps? You can answer here in chat, or edit the fields directly in the dashboard above."
+
+**Two ways to complete missing information (both work, mix freely):**
+1. Answer questions in chat → Claude updates the corresponding dashboard fields automatically
+2. Edit fields directly in the dashboard → changes take effect immediately
+
+The dashboard updates as new information is added — it's a living document, not a one-time output.
 
 ---
 
@@ -227,7 +263,7 @@ What you're trying to achieve — so every recommendation ties back to an outcom
 
 ---
 
-## Step 4: Self-Review
+## Step 5: Self-Review
 
 Before presenting the final document, review it against these criteria:
 
@@ -248,7 +284,7 @@ Before presenting the final document, review it against these criteria:
 
 ---
 
-## Step 5: Create the Document
+## Step 6: Create the Document
 
 After gathering and reviewing information, create the business context document using this structure:
 
@@ -364,7 +400,7 @@ After gathering and reviewing information, create the business context document 
 
 ---
 
-## Step 6: Confirm and Save
+## Step 7: Confirm and Save
 
 - Present the completed document to the user
 - Ask: "Does this feel accurate? Does anything need adjusting?"
@@ -403,7 +439,7 @@ Suggest updating the business context when:
 
 ## Visual Output
 
-Generate an interactive HTML artifact: a **Business Profile Dashboard** — a structured, scannable reference card for the completed business context document.
+Generate an interactive HTML artifact: a **Business Profile Dashboard** — a structured, living reference card for the business context document. The dashboard generates immediately from whatever data is available — from a website scan, a guided interview, or both. It updates as new information is added through chat or direct editing.
 
 ### Layout
 
@@ -421,6 +457,15 @@ Each of the 11 sections renders as its own card with:
 - Each field shown as a label (gray, small caps) + value (black, normal weight) pair
 - Multi-value fields (like differentiators, testimonials, writing rules) rendered as a vertical list with a subtle left border
 - A small "complete" badge (green) or "needs input" badge (yellow) in the top-right corner of each card
+
+### Data Source States
+
+Fields rendered from a website scan or other source display a subtle origin tag:
+- **From website** — data was clearly stated on the scanned site (small link icon, gray label)
+- **[Inferred]** — data was implied but not explicitly stated (amber text, italic)
+- **Empty** — no data found; field shows a soft placeholder: "Click to add or answer in chat" with a dashed border
+
+When the user answers a follow-up question in chat, Claude updates the relevant field(s) in the dashboard automatically. The updated field briefly highlights (a short pulse animation) to confirm it was just populated. The section completion badge and header progress bar update immediately.
 
 ### Interactive Behaviors
 
